@@ -23,7 +23,6 @@ Authorization Bearer ${JWT_token}
 这里我们以JAVA为例，示例一个JWT token校验解析的过程：
 
 ```java
-
 import java.io.UnsupportedEncodingException;import java.security.GeneralSecurityException;import java.security.KeyFactory;import java.security.NoSuchAlgorithmException;import java.security.Signature;import java.security.interfaces.RSAPublicKey;import java.security.spec.InvalidKeySpecException;import java.security.spec.X509EncodedKeySpec;import java.util.Base64;
 
 /** * Created by kael on 2016/7/7. */public class TestJwtVerify { // sso默认开放的公钥 static String publicKey = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDDASOjIWexLpnXiJNJF2pL6NzP\n" + "fBoF0tKEr2ttAkJ/7f3uUHhj2NIhQ01Wu9OjHfXjCvQSXMWqqc1+O9G1UwB2Xslb\n" + "WNwEZFMwmQdP5VleGbJLR3wOl3IzdggkxBJ1Q9rXUlVtslK/CsMtkwkQEg0eZDH1\n" + "VeJXqKBlEhsNckYIGQIDAQAB"; public static void main(String[] args) { // jwt token String token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJ1c2VybmFtZSI6InBlbmdoaiIsInNjb3BlIjpudWxsLCJleHBpcmVzX2luIjozNjAwMCwiZXhwaXJlcyI6MTQ2NzkwMjYzOTAwMCwiZXhwIjoxNDY3OTAyNjg3MjgwfQ.P4LSoLj4cqnnNdW61HjPxWPWCvV8BdimHXp_5K0sMEAF3KRb9AFqCDAnbwWOj6OdWlIJrWt3ftBptPW7beyrKpbckRDg0YpuYLdTNKS6uJ1htpgZ5y3iRtA1r1YKl-h7GdZSqzxkXjsVH8hy03Hpg1h_TamBVQAIzonu7aclI30";
