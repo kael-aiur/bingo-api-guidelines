@@ -21,7 +21,7 @@
 
 ## OpenId Connect
 
-网关和sso之间的用户身份校验是通过[OpenId Connect](http://openid.net/specs/openid-connect-core-1_0.html)协议实现的，并且网关通过身份校验之后，会将用户信息转成JWT token并在转发给api的请求中添加如下请求头：
+网关和sso之间的用户身份校验是通过[OpenId Connect](http://openid.net/specs/openid-connect-core-1_0.html)协议实现的，并且网关通过身份校验之后，会将用户信息转成[JWT token](http://self-issued.info/docs/draft-ietf-oauth-json-web-token.html)并在转发给api的请求中添加如下请求头：
 
 ```
 Authorization Bearer ${JWT_token}
