@@ -94,7 +94,9 @@ public class TestJwtVerify {
 
 最终打印的结果如下：
 
-`javascript{"username":"penghj","scope":null,"expires_in":36000,"expires":1467902639000,"exp":1467902687280}`
+```
+javascript{"username":"penghj","scope":null,"expires_in":36000,"expires":1467902639000,"exp":1467902687280}
+```
 
 这里各个字段的含义如下：
 
