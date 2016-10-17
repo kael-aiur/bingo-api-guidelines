@@ -102,8 +102,9 @@ public class TestJwtVerify {
 
 ```
 username:用户登录账号scope:用户授权列表，是一个字符串，以','分隔多个权限
-client:不一定有这个字段，只有当client是经过sso校验的情况下才会有这个字段，代表的是注册在sso的应用id,存在这个字段时表示这个token的client也是受信任的。
-exp:有效期
+client:不一定有这个字段，只有当client是经过sso校验的情况下才会有这个字段，代表的是注册在sso的应用id,存在这个字段时表示这个token的client也是受信任的
+exp:有效期，
+permission：权限列表，就是这个用户具备的权限列表，可以通过权限列表来确定用户是否有权限访问当前api
 ```
 
 API服务解析用户信息之后，即可以进行校验和处理了。
