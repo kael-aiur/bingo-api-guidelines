@@ -22,6 +22,7 @@ Authorization Bearer ${JWT_token}
 
 这里我们以JAVA为例，示例一个JWT token校验解析的过程：
 
+
 ```java
 import java.io.UnsupportedEncodingException;import java.security.GeneralSecurityException;import java.security.KeyFactory;import java.security.NoSuchAlgorithmException;import java.security.Signature;import java.security.interfaces.RSAPublicKey;import java.security.spec.InvalidKeySpecException;import java.security.spec.X509EncodedKeySpec;import java.util.Base64;
 
