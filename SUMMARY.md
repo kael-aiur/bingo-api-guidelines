@@ -2,7 +2,7 @@
 
 * [品高api网关服务开发指引](README.md)
 * [api网关总体介绍](introdion.md)
-* [api开发规范](specification.md)
+* [api开发规范]()
     * [用户身份校验](authentication.md)
     * [统一响应码](response.md)
     * [url设计规范](url.md)
