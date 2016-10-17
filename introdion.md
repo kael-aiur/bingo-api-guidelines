@@ -17,3 +17,8 @@
 * 网关将返回处理结果返回给客户端；
 * 整个调用过程的日志都通过ELK进行收集和监控；
 
+在上述整个过程中，api需要特别关注的就是网关请求转发过来时的token，这个token包含了用户身份和权限列表，用于api本身的用户身份校验和权限校验。
+
+## OpenId Connect
+
+网关和sso之间的用户身份校验是通过[OpenId Connect](http://openid.net/specs/openid-connect-core-1_0.html)协议实现的，
