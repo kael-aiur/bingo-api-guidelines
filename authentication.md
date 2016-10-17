@@ -61,19 +61,19 @@ public class TestJwtVerify {
 }
 // 用公钥校验token的有效性 
 protected static boolean verifySignature(String content, String signed) { 
-try { 
-byte[] signedData = Base64.getUrlDecoder().decode(signed.getBytes("UTF-8")); 
-byte[] contentData = content.getBytes(); 
-Signature signature = Signature.getInstance("SHA256withRSA"); 
-signature.initVerify(decodePublicKey(publicKey)); 
-signature.update(contentData); 
-return signature.verify(signedData); 
-} catch (GeneralSecurityException e) { 
-return false; 
-} catch (UnsupportedEncodingException e) { 
-e.printStackTrace(); return false; 
-} 
-} 
+    try { 
+        byte[] signedData = Base64.getUrlDecoder().decode(signed.getBytes("UTF-8")); 
+        byte[] contentData = content.getBytes(); 
+        Signature signature = Signature.getInstance("SHA256withRSA"); 
+        signature.initVerify(decodePublicKey(publicKey)); 
+        signature.update(contentData); 
+        return signature.verify(signedData); 
+    } catch (GeneralSecurityException e) { 
+        return false; 
+    } catch (UnsupportedEncodingException e) { 
+        e.printStackTrace(); return false; 
+    } 
+}
 // 生成校验用的公钥 
 public static RSAPublicKey decodePublicKey(String base64) { 
 X509EncodedKeySpec spec = new X509EncodedKeySpec(Base64.getMimeDecoder().decode(base64)); 
