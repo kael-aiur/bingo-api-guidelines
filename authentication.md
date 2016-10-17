@@ -9,6 +9,7 @@ Authorization Bearer ${JWT_token}
 这个请求头表明网关已经校验过用户身份了，我们可以从`JWT_token`中解析出用户的相关信息。
 
 这里我们先对JWT token做一个简单的解释：
+
 * jwt token分为3段，以'.'分隔；
 * 第一段是头部(Header)，主要描述jwt的基本信息如：加密算法，token类型等，是一个经过base64编码的json字符串；
 * 第二段是载荷(Payload)，主要是存放真正的用户信息，也是一个经过base64编码的json字符串；
