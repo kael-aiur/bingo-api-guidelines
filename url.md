@@ -64,3 +64,22 @@ http://localhost:8080/api/score
 > * 对于单个模型的修改和删除，url是模型的url加上记录的id，通过`PATCH`和`DELETE`确定是修改还是删除
 
 ## 具有包含关系的模型url
+
+在学生成绩管理的模块中，我们知道学生和班级以及学校是有一定包含关系的，比如班级是属于学校的，学生是属于班级的，同时学生也是属于学校的，而成绩是属于学生的，这些都是包含关系，某些url的包含关系会在url中体现出来，比如查询某个学校的某个班级的学生：
+
+```
+GET /school/{schoolId}/classes/{classesId}/student?filter=id eq {studentId}
+```
+
+在这个例子里，实际上学生的id已经知道了，但是为了构建这个url，得先查出学生的学校和班级，这种url可以明确表达出模型之间的关系，但是在使用上并不那么方便，因此我们的规范建议不使用这类强关系的url，对于模型的操作就直接使用模型的根url，而相应的关系模型采用参数的方式传递，如果是强关系的话，使用必须参数，非强关系的话使用非必须参数，如下：
+
+```
+GET /student?schoolId={schoolId}&classesId={classesId}&id={studentId}
+```
+
+当然，这里由于`{studentId}`已经能唯一确定一名学生了，因此{schoolId}和{classesId}是非必需的参数，可以不传。
+
+这里总结一下具有包含关系的url设计规范：
+
+> * 具有包含关系的模型的url也是应用上下文的url加上模型的根url
+>
