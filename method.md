@@ -81,5 +81,8 @@ GET /statistics/average?classesId={classesId}&subject=math
 
 这个请求是一个特定的业务api，并不是查询某个模型，一样需要使用`GET`，同时无论执行多少次，都不会导致服务端数据变化，查询的结果也不应该变化。
 
+---
+
+## 需要写数据的业务操作
 
 
