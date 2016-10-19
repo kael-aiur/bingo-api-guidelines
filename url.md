@@ -56,3 +56,4 @@ http://localhost:8080/api/score
 
 > * 对于单个模型的增加和查询，url是模型的url根路径，通过`GET`和`POST`来确定是新增还是查询
 > * 对于单个模型的修改和删除，url是模型的url加上记录的id，通过`PATCH`和`DELETE`确定是修改还是删除
+
