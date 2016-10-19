@@ -71,7 +71,7 @@ http://localhost:8080/api/score
 GET /school/{schoolId}/classes/{classesId}/student?filter=id eq {studentId}
 ```
 
-在这个例子里，实际上学生的id已经知道了，但是为了构建这个url，得先查出学生的学校和班级，这种url可以明确表达出模型之间的关系，但是在使用上并不那么方便，因此我们的规范建议不使用这类强关系的url，对于模型的操作就直接使用模型的根url，而相应的关系模型采用参数的方式传递，如果是强关系的话，使用必须参数，非强关系的话使用非必须参数，如下：
+在这个例子里，实际上学生的id已经知道了，但是为了构建这个url，得先查出学生的学校和班级，这种url可以明确表达出模型之间的关系，但是在使用上并不那么方便，因此我们的**规范建议不使用这类强关系的url，对于模型的操作就直接使用模型的根url，而相应的关系模型采用参数的方式传递，如果是强关系的话，使用必须参数，非强关系的话使用非必须参数**，如下：
 
 ```
 GET /student?schoolId={schoolId}&classesId={classesId}&id={studentId}
