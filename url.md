@@ -91,7 +91,7 @@ GET /student?schoolId={schoolId}&classesId={classesId}&id={studentId}
 
 ##  与模型无关的业务url
 
-有些时候，我们也会需要开发一些api，这些api跟某个模型没有直接关系，而是对多个模型的综合业务，这种情况的url一般以改业务模块作为api的根路径，比如我们需要开发一个学生成绩统计的url，这个统计业务设计多个模型，学生成绩的比较，班级平均分比较和学校平均分等，这里我们以统计班级平均分的api为例，url如下：
+有些时候，我们也会需要开发一些api，这些api跟某个模型没有直接关系，而是**对多个模型的综合业务，这种情况的url一般以改业务模块作为api的根路径，后面加上具体的业务功能**，比如我们需要开发一个学生成绩统计的url，这个统计业务设计多个模型，学生成绩的比较，班级平均分比较和学校平均分等，这里我们以统计班级平均分的api为例，url如下：
 
 ```
 GET /statistics/average?classesId={classesId}&subject={math}
@@ -101,5 +101,5 @@ GET /statistics/average?classesId={classesId}&subject={math}
 
 规范如下：
 
-> * 与模型无关或涉及多个模型并且没有主次的业务api，使用业务名称作为url的根路径
-> *
+> * 与模型无关或涉及多个模型并且没有主次的业务api，使用业务模块名称(下划线式)作为url的根路径
+> * 具体的业务可以在业务模块的
