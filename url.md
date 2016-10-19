@@ -10,4 +10,18 @@ api的url和一般的restful url相似，但是为了更加方便设计和调用
 
 ## url中的模型名称
 
-多数情况下，我们的api都会对某些模型进行增删改查的处理，
+多数情况下，我们的api都会对某些模型进行增删改查的处理，这里我们以对学生信息的查询为例，一般url如下：
+
+```
+单个查询：GET /student/{id}
+多个查询：GET /student?filter=classesId eq {classesId}
+```
+
+这里我们可以看到，无论是查询单个学生的url还是查询多个学生的url，使用的都是单数的形式，不会使用复数形式，指的注意的是，如果是查询班级信息：
+
+```
+单个查询: GET /classes/{id}
+多个查询: GET /classes?filter=schoolId eq {schoolId}
+```
+
+这里我们注意到，班级使用的是复数形式，这里是因为`class`是java的关键字，模型的名称尽量不要和
