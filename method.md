@@ -48,9 +48,9 @@
 
 ```
 删除一个学校的记录：PATCH /school/{schoolId}
-修改一个班级的记录：PATCH /classes/{classesId}
-修改一个学生的记录：PATCH /student/{studentId}
-修改一个分数的记录：PATCH /score/{scoreId}
+删除一个班级的记录：PATCH /classes/{classesId}
+删除一个学生的记录：PATCH /student/{studentId}
+删除一个分数的记录：PATCH /score/{scoreId}
 ```
 
 
