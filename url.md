@@ -24,4 +24,4 @@ api的url和一般的restful url相似，但是为了更加方便设计和调用
 多个查询: GET /classes?filter=schoolId eq {schoolId}
 ```
 
-这里我们注意到，班级使用的是复数形式，这里是因为`class`是java的关键字，模型的名称尽量不要和
+这里我们注意到，班级使用的是复数形式，这里是因为`class`是java的关键字，模型的名称尽量不要和关键字冲突。
