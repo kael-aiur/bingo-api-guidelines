@@ -102,4 +102,4 @@ GET /statistics/average?classesId={classesId}&subject={math}
 规范如下：
 
 > * 与模型无关或涉及多个模型并且没有主次的业务api，使用业务模块名称(下划线式)作为url的根路径
-> * 具体的业务可以在业务模块的
+> * 具体的业务功能名称作为拼在业务url后边的子路径
