@@ -37,6 +37,7 @@ GET /male_student
 现在我们以对学生信息的增删改查为例子来说明如何设计url。
 
 ```
+查询学生记录：GET /student
 添加学生记录: POST /student
 修改学生记录: PATCH /student/{id}
 删除学生记录: DELETE /student/{id}
