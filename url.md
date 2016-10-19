@@ -51,4 +51,4 @@ http://localhost:8080/api/school
 http://localhost:8080/api/score
 ```
 
-
+从上面的例子可以看出来，**对于单个模型的增删改查，其实url都是同一个，就是模型的根路径，然后通过不同的http method和参数来区别操作的**。
