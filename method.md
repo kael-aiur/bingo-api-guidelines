@@ -37,3 +37,4 @@
 修改一个学生的记录：PATCH /student/{studentId}
 修改一个分数的记录：PATCH /score/{scoreId}
 ```
+
