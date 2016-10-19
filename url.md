@@ -101,5 +101,5 @@ GET /statistics/average?classesId={classesId}&subject={math}
 
 规范如下：
 
->
+> * 与模型无关或涉及多个模型并且没有主次的业务api，使用业务名称作为url的根
 > *
