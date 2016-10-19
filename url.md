@@ -82,4 +82,4 @@ GET /student?schoolId={schoolId}&classesId={classesId}&id={studentId}
 这里总结一下具有包含关系的url设计规范：
 
 > * 具有包含关系的模型的url也是应用上下文的url加上模型的根url
->
+> * 与这个模型有关的模型参数采用参数的方式传递，不使用url的方式传递
