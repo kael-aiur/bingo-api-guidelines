@@ -42,7 +42,7 @@ GET /male_student
 删除学生记录: DELETE /student/{id}
 ```
 
-我们注意到，对单个学生记录的操作，url都是在应用的根目录后补充模型名称的小写单词作为url的，完整的url例子如下:
+我们注意到，对单个学生记录的操作，**url都是在应用的根目录后补充模型名称的小写单词作为url的**，完整的url例子如下:
 
 ```
 http://localhost:8080/api/student
