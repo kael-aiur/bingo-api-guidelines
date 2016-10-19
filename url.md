@@ -30,3 +30,23 @@ api的url和一般的restful url相似，但是为了更加方便设计和调用
 
 现在我们以对学生信息的增删改查为例子来说明如何设计url。
 
+```
+添加学生记录: POST /student
+修改学生记录: PATCH /student/{id}
+删除学生记录: DELETE /student/{id}
+```
+
+我们注意到，对单个学生记录的操作，url都是在应用的根目录后补充模型名称的小写单词作为url的，完整的url例子如下:
+
+```
+http://localhost:8080/api/student
+http://localhost:8080/api/classes
+http://localhost:8080/api/school
+http://localhost:8080/api/score
+```
+
+这里由于我们的模型都是单个单词，所以看到的url是吧模型名称转小写即可，实际上标准的url规范是将模型名称从驼峰式转为下划线式，比如我们如果将学生的模型名称定义为`MaleStudent`，那么url如下：
+
+```
+http://localhost:8080/api/male_student
+```
