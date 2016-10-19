@@ -47,7 +47,10 @@
 删除数据，使用`DELETE`请求，我们同样只规定对单行记录的删除，对于多行记录的删除，同样是建议在具体的业务模块api中定义，但是一样使用`POST`请求。单行记录的删除示例如下：
 
 ```
-
+删除一个学校的记录：PATCH /school/{schoolId}
+修改一个班级的记录：PATCH /classes/{classesId}
+修改一个学生的记录：PATCH /student/{studentId}
+修改一个分数的记录：PATCH /score/{scoreId}
 ```
 
 
