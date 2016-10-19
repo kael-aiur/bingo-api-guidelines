@@ -85,5 +85,7 @@ GET /statistics/average?classesId={classesId}&subject=math
 
 ## 需要写数据的业务操作
 
+关于对数据的操作，restful的参考规范中基本只定义了对单行记录的操作方法，在实际开发api的过程中，我们经常遇到各种各样需要提交数据的api，并且这类api并不是只针对单个模型的记录的操作，而是一些特定的业务操作，这一类操作，品高api开发规范建议全部使用`POST`方法，比如：
+
 
 
