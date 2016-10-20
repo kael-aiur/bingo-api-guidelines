@@ -26,5 +26,8 @@ GET /student/7D82fxxw1jn?select=id,name
 返回的结果如下：
 
 ```javascript
-
+{
+    id:"7D82fxxw1jn",
+    name:"Tom"
+}
 ```
