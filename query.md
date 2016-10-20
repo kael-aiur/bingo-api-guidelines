@@ -94,11 +94,13 @@ filters表达式中规定的操作符和作用如下：
 |操作符|类似SQL的操作符|说明|示例|
 |----|----|----|----|
 |eq|=|等于|filters=name eq Tom|
-|lt|<|小于||
-|le|<=|小于或等于||
-|gt|>|大于||
-|ge|>=|大于或等于||
+|lt|<|小于|filters=age lt 20|
+|le|<=|小于或等于|filters=age le 20|
+|gt|>|大于|filters=age gt 20|
+|ge|>=|大于或等于|filters=age ge 20|
 |ne|!=|不等于||
 |like|like|模糊查询||
 |in|in|在指定的值内查询||
+|and|and|表示多条件间的且关系||
+|or|or|表示多条件间的或关系||
 
