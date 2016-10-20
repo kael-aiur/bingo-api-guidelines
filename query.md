@@ -123,3 +123,32 @@ orderby表达式主要是用于排序，类似sql的`order by`关键字。
 请求2: GET /student?orderby=name desc&select=id,name
 ```
 
+请求1的返回结果:
+
+```javascript
+[
+    {
+        id:"7D82fxxw1jn",
+        name:"Tom"
+    },
+    {
+        id:"7hvq3wggMsn",
+        name:"Jerry"
+    }
+]
+```
+
+请求2的返回结果：
+
+```javascript
+[
+    {
+        id:"7hvq3wggMsn",
+        name:"Jerry"
+    },
+    {
+        id:"7D82fxxw1jn",
+        name:"Tom"
+    }
+]
+```
