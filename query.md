@@ -93,7 +93,7 @@ filters表达式中规定的操作符和作用如下：
 
 |操作符|SQL|说明|示例|
 |----|----|----|----|
-|eq|=|等于|filters=name **eq** Tom|
+|eq|=|等于|filters=name ```eq`` Tom|
 |lt|<|小于|filters=age **lt** 20|
 |le|<=|小于或等于|filters=age **le** 20|
 |gt|>|大于|filters=age **gt** 20|
