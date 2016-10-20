@@ -51,3 +51,5 @@ select表达式的作用是指定查询的属性，类似SQL的select关键字�
 > select的语法规范：
 > * select是参数名
 > * select的参数值是查询对象的属性名，多个属性名之间用逗号分隔
+
+## filters表达式
