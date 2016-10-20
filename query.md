@@ -109,4 +109,4 @@ filters表达式中规定的操作符和作用如下：
 
 ## orderby表达式
 
-orderby表达式主要是用于排序，类型sql的`order by`
+orderby表达式主要是用于排序，类型sql的`order by`关键字。
