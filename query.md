@@ -13,12 +13,6 @@ api的查询表达式是在查询模型记录的时候使用的表达式，用�
 |orderby表达式|指定查询排序方式|
 |expand表达式|指定关系属性展开方式|
 
-
-* select表达式
-* filters表达式
-* orderby表达式
-* 
-
 ## select表达式
 
 select表达式的作用是指定查询的属性，类似SQL的select关键字。
