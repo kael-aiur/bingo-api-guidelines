@@ -38,6 +38,8 @@ select表达式的作用是指定查询的属性，类似SQL的select关键字�
 ```javascript
 {
     id:"7D82fxxw1jn",
-    name:"Tom"
+    name:"Tom",
+    classesId:"7h72GggUMsn",
+    schoolId:"7hUdfgwURaH"
 }
 ```
