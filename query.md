@@ -120,5 +120,6 @@ orderby表达式主要是用于排序，类似sql的`order by`关键字。
 
 ```
 请求1：GET /student?select=id,name
-请求2: GET /student?orderby=name descselect=id,name
+请求2: GET /student?orderby=name desc&select=id,name
 ```
+
