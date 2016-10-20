@@ -104,3 +104,5 @@ filters表达式中规定的操作符和作用如下：
 |and|and|表示多条件间的且关系|filters=name **like** T% **and** age **lt** 20|
 |or|or|表示多条件间的或关系|filters=name **like** T% **or** age **lt** 20|
 |()|()|表达式组，可以用来改变表达式的优先级关系|filters=name **like** T% **and** **((**age **lt** 20**)** **or** **(**name **like** %y**))**|
+
+从上面的表格中我们也可以看出，操作符之间是可以组合的。
