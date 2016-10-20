@@ -43,3 +43,8 @@ select表达式的作用是指定查询的属性，类似SQL的select关键字�
     schoolId:"7hUdfgwURaH"
 }
 ```
+
+从上面两个请求的结果我们可以知道，select其实是指定了只要查询哪些属性即可。
+
+> select的语法规范：
+
