@@ -102,5 +102,5 @@ filters表达式中规定的操作符和作用如下：
 |like|like|模糊查询|filters=name like T%|
 |in|in|在指定的值内查询|filters=name in (Tom,Jerry)|
 |and|and|表示多条件间的且关系|filters=name like T% and age lt 20|
-|or|or|表示多条件间的或关系||
-|()|()|表达式组，可以用来改变表达式的优先级关系||
+|or|or|表示多条件间的或关系|filters=name like T% or age lt 20|
+|()|()|表达式组，可以用来改变表达式的优先级关系|filters=name like T% and (age lt 20 or name like %y)|
