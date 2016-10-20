@@ -91,7 +91,7 @@ filter表达式的作用是对查询结果进行过滤，类似SQL中的where关
 
 filters表达式中规定的操作符和作用如下：
 
-|操作符|对应SQL|说明|示例|
+|操作符|SQL|说明|示例|
 |----|----|----|----|
 |eq|=|等于|filters=name eq Tom|
 |lt|<|小于|filters=age lt 20|
