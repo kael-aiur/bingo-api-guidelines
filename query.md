@@ -57,7 +57,32 @@ select表达式的作用是指定查询的属性，类似SQL的select关键字�
 filter表达式的作用是对查询结果进行过滤，类似SQL中的where关键字，我们先来看一个例子：
 
 ```
-请求1：GET /student
-请求2: GET /student?filters=name eq Tom
+请求1：GET /student?select=id,name
+请求2: GET /student?filters=name eq Tom&select=id,name
 ```
 
+请求1的返回结果如下：
+
+```javascript
+[
+    {
+        id:"7D82fxxw1jn",
+        name:"Tom"
+    },
+    {
+        id:"7hvq3wggMsn",
+        name:"Jerry"
+    }
+]
+```
+
+请求2的返回结果如下:
+
+```javascript
+[
+    {
+        id:"7D82fxxw1jn",
+        name:"Tom"
+    }
+]
+```
