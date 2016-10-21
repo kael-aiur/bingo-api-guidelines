@@ -48,3 +48,4 @@ form-urlencoded:请求体是url编码的key-value对
 
 ### json请求体
 
+请求体是json的情况下，一般需要添加请求头:`Content-Type: application/json`
