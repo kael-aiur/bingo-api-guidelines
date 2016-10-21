@@ -8,5 +8,11 @@
 |queryString|通过查询字符串传递|/student?id={id}|
 |body|通过请求体传递||
 
-## 查询参数传递
+## url参数传递
 
+url参数传递，是指将参数值作为url的一部分，用户访问url的时候，服务端从url中解析出参数值，如：
+
+```
+GET /student/{id}
+GET /statistic/{classesId}/average
+```
