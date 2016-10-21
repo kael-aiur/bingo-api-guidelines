@@ -8,3 +8,5 @@
 |queryString|通过查询字符串传递|/student?id={id}|
 |body|通过请求体传递||
 
+## 查询参数传递
+
