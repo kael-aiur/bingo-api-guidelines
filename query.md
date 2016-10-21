@@ -165,5 +165,5 @@ expand表达式也叫展开表达式，主要是用来解决一些需要额外�
 
 ```
 查询班级信息: GET /classes/7D82fxxw1jn
-查询班级信息: GET /classes/7D82fxxw1jn?expand=scores
+查询班级信息: GET /classes/7D82fxxw1jn?expand=students
 ```
