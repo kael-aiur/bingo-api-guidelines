@@ -123,4 +123,5 @@ name=Lucy&classesId=7h72GggUMsn&schoolId=7hUdfgwURaH
 
 |api作用|参数位置|说明|
 |----|----|----|
-||||
+|创建数据|body|建议使用json格式的请求体|
+|修改数据|body|建议使用json格式的请求体|
