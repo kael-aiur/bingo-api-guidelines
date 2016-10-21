@@ -232,3 +232,4 @@ GET /classes/7h72GggUMsn?expand=students(id,name)
 ```
 
 > expand表达式规范：
+> * 参数名是expand，参数值是表达式
