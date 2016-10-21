@@ -118,3 +118,4 @@ name=Lucy&classesId=7h72GggUMsn&schoolId=7hUdfgwURaH
 这里的请求体就是`name=Lucy&classesId=7h72GggUMsn&schoolId=7hUdfgwURaH`，一般情况下web容器都能自动解析这个请求体。
 
 ## api参数设计规范
+
