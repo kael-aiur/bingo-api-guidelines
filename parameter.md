@@ -62,3 +62,10 @@ Cache-Control: no-cache
     schoolId:"7hUdfgwURaH"
 }
 ```
+
+上面的是http的请求报文，我们在请求头中指定了请求体类型是json，因此api解析只需要将请求体读出来，并以json的方式解析即可。
+
+### form-data请求体
+
+form-data的请求体，需要添加请求头`Content-Type: multipart/form-data`，同样以创建学生为例，请求报文如下：
+
