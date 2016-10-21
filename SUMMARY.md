@@ -7,6 +7,6 @@
     * [url设计规范](url.md)
     * [请求方法规范](method.md)
     * [统一响应码](response.md)
-    * [api参数规范](parameter.md)
     * [api查询表达式](query.md)
+    * [api参数规范](parameter.md)
 
