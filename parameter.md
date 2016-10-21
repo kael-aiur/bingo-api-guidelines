@@ -46,3 +46,5 @@ form-data:请求体是一个二进制串
 form-urlencoded:请求体是url编码的key-value对
 ```
 
+### json请求体
+
