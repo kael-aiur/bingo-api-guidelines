@@ -107,5 +107,10 @@ Content-Disposition: form-data; name="schoolId"
 form-urlencoded请求体，一般是将参数以key-value的方式组织，并以url编码的方式编码特殊字符，请求体格式和queryString相似。举例如下：
 
 ```
+POST /student HTTP/1.1
+Host: localhost:8080
+Content-Type: application/x-www-form-urlencoded
+Cache-Control: no-cache
 
+name=Lucy&classesId=7h72GggUMsn&schoolId=7hUdfgwURaH
 ```
