@@ -164,6 +164,73 @@ orderby表达式主要是用于排序，类似sql的`order by`关键字。
 expand表达式也叫展开表达式，主要是用来解决一些需要额外返回的补充信息的需求的。我们先来看一个例子：
 
 ```
-请求1：查询班级信息: GET /classes/7D82fxxw1jn
-请求2：查询班级信息: GET /classes/7D82fxxw1jn?expand=students
+请求1：查询班级信息: GET /classes/7h72GggUMsn
+请求2：查询班级信息: GET /classes/7h72GggUMsn?expand=students
+```
+
+请求1的查询结果如下：
+
+```javascript
+{
+    id:7h72GggUMsn,
+    classes:1,
+    grade:1,
+    schoolId:7hUdfgwURaH
+}
+```
+
+请求2的查询结果如下：
+
+```javascript
+{
+    id:7h72GggUMsn,
+    classes:1,
+    grade:1,
+    schoolId:7hUdfgwURaH,
+    students:[
+        {
+            id:"7D82fxxw1jn",
+            name:"Tom",
+            classesId:"7h72GggUMsn",
+            schoolId:"7hUdfgwURaH"
+        },
+        {
+            id:"7hvq3wggMsn",
+            name:"Jerry",
+            classesId:"7h72GggUMsn",
+            schoolId:"7hUdfgwURaH"
+        }
+    ]
+}
+```
+
+这里我们可以看出expand表达式的作用，即指定展开某个关系关联起来的记录信息，在本次查询中返回。展开参数还能指定只展开某些属性，比如：
+
+```
+GET /classes/7h72GggUMsn?expand=students(id,name)
+```
+
+查询结果如下：
+
+```javascript
+{
+    id:7h72GggUMsn,
+    classes:1,
+    grade:1,
+    schoolId:7hUdfgwURaH,
+    students:[
+        {
+            id:"7D82fxxw1jn",
+            name:"Tom",
+            classesId:"7h72GggUMsn",
+            schoolId:"7hUdfgwURaH"
+        },
+        {
+            id:"7hvq3wggMsn",
+            name:"Jerry",
+            classesId:"7h72GggUMsn",
+            schoolId:"7hUdfgwURaH"
+        }
+    ]
+}
 ```
