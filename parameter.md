@@ -25,3 +25,4 @@ GET /statistic/7h72GggUMsn/average
 ```
 
 api应该能够解析得到参数id=7D82fxxw1jn和classesId=7h72GggUMsn
+
