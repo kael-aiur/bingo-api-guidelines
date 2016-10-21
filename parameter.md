@@ -38,3 +38,11 @@ api应该能够解析得到参数id=7D82fxxw1jn和classesId=7h72GggUMsn
 
 通过请求体传递参数有多种方式，按照http协议的标准规范，一般需要通过请求头指定请求体类型，然后根据请求体类型解析请求体获取参数。
 
+我们以三种常用的请求体格式来举例：
+
+```
+json：请求体是一个json字符串
+form-data:请求体是一个二进制串
+form-urlencoded:请求体是url编码的key-value对
+```
+
