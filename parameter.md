@@ -61,5 +61,4 @@ Cache-Control: no-cache
     classesId:"7h72GggUMsn",
     schoolId:"7hUdfgwURaH"
 }
-
 ```
