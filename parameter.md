@@ -33,3 +33,6 @@ api应该能够解析得到参数id=7D82fxxw1jn和classesId=7h72GggUMsn
 ```
 查询班级数学平均分：GET /statistic/average?classesId=7h72GggUMsn&subject=math
 ```
+
+## 请求体参数传递
+
