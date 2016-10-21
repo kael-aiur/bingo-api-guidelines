@@ -234,3 +234,4 @@ GET /classes/7h72GggUMsn?expand=students(id,name)
 > expand表达式规范：
 > * 参数名是expand，参数值是表达式
 > * 表达式就是关系名，可以在关系名后使用括号，括号内指定展开属性，多个属性以逗号分隔
+> * 多个关系展开以逗号分隔
