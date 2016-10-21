@@ -221,15 +221,11 @@ GET /classes/7h72GggUMsn?expand=students(id,name)
     students:[
         {
             id:"7D82fxxw1jn",
-            name:"Tom",
-            classesId:"7h72GggUMsn",
-            schoolId:"7hUdfgwURaH"
+            name:"Tom"
         },
         {
             id:"7hvq3wggMsn",
-            name:"Jerry",
-            classesId:"7h72GggUMsn",
-            schoolId:"7hUdfgwURaH"
+            name:"Jerry"
         }
     ]
 }
