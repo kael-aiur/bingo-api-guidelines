@@ -230,3 +230,5 @@ GET /classes/7h72GggUMsn?expand=students(id,name)
     ]
 }
 ```
+
+> expand表达式规范：
