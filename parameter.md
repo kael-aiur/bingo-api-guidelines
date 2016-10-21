@@ -13,6 +13,6 @@
 url参数传递，是指将参数值作为url的一部分，用户访问url的时候，服务端从url中解析出参数值，如：
 
 ```
-GET /student/{id}
-GET /statistic/{classesId}/average
+查询学生信息：GET /student/{id}
+查询班级平均分：GET /statistic/{classesId}/average
 ```
