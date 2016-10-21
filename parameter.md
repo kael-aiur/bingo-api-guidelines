@@ -16,3 +16,12 @@ url参数传递，是指将参数值作为url的一部分，用户访问url的�
 查询学生信息：GET /student/{id}
 查询班级平均分：GET /statistic/{classesId}/average
 ```
+
+如果访问如下路径：
+
+```
+GET /student/7D82fxxw1jn
+GET /statistic/7h72GggUMsn/average
+```
+
+api应该能够解析得到参数id=7D82fxxw1jn和classesId=7h72GggUMsn
