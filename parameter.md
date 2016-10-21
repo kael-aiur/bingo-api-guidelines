@@ -128,3 +128,4 @@ name=Lucy&classesId=7h72GggUMsn&schoolId=7hUdfgwURaH
 |查询数据|queryString/path|指定条件查询建议使用queryString的方式传递查询参数，根据指定参数(如id)查询单行记录建议使用path传递参数|
 |删除数据|path/queryString|单行删除(根据id)建议使用path传递参数，根据指定条件删除多行记录建议使用queryString|
 |需要写数据的业务操作|body|建议使用form-urlencoded的请求体传递参数|
+|文件上传一类的操作|body|建议使用form-data的请求体传递参数和文件流|
