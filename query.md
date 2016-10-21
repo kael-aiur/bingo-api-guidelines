@@ -164,6 +164,6 @@ orderby表达式主要是用于排序，类似sql的`order by`关键字。
 expand表达式也叫展开表达式，主要是用来解决一些需要额外返回的补充信息的需求的。我们先来看一个例子：
 
 ```
-查询班级信息: GET /classes/7D82fxxw1jn
-查询班级信息: GET /classes/7D82fxxw1jn?expand=students
+请求1：查询班级信息: GET /classes/7D82fxxw1jn
+请求2：查询班级信息: GET /classes/7D82fxxw1jn?expand=students
 ```
