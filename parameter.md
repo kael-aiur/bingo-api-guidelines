@@ -51,5 +51,8 @@ form-urlencoded:请求体是url编码的key-value对
 请求体是json的情况下，一般需要添加请求头`Content-Type: application/json`，比如我们需要创建一个学生的时候，通过如下请求：
 
 ```
+POST /student HTTP/1.1Host: localhost:8080Authorization: Bearer v3_dffe6ed9-0114-43ef-bd72-b6d556f69675Content-Type: application/jsonCache-Control: no-cachePostman-Token: ba8030be-2748-8a8f-194b-cfa1d4e07e79
+
+{ name:"Lucy", classesId:"7h72GggUMsn", schoolId:"7hUdfgwURaH"}
 
 ```
