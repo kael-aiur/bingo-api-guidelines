@@ -61,6 +61,7 @@ http://localhost:8080/api/score
 
 ```
 GET /student?schoolId={schoolId}&classesId={classesId}&id={studentId}
+GET /classes?schoolId={schoolId}
 ```
 
 当然，这里由于`{studentId}`已经能唯一确定一名学生了，因此{schoolId}和{classesId}是非必需的参数，可以不传。
