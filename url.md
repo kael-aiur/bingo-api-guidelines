@@ -18,20 +18,11 @@ api的url和一般的restful url相似，但是为了更加方便设计和调用
 ```
 GET /student/{id}                            :单个查询
 GET /student?filter=classesId eq {classesId} :多个查询
+GET /classes/{id}                            :单个查询
+GET /classes?filter=schoolId eq {schoolId}   :多个查询
 ```
 
-这里我们可以看到，无论是查询单个学生的url还是查询多个学生的url，使用的都是单数的形式，不会使用复数形式，值得注意的是，如果是查询班级信息：
-
-```
-GET /classes/{id}                          :单个查询
-GET /classes?filter=schoolId eq {schoolId} :多个查询
-```
-
-由于`class`是java的关键字，需要考虑如何避开关键字，这里使用了`Classes`这种复数形式来给类命名。
-
-```
-GET /male_student
-```
+无论是查询单个学生的url还是查询多个学生的url，使用的都是单数的形式，不会使用复数形式，由于`class`是java的关键字，需要考虑如何避开关键字，这里使用了`Classes`这种复数形式来给类命名。
 
 > url的设计，一般涉及模型的会将模型的名称从驼峰式转换为下划线式，如果某些模型的名称本身就是下划线式，那么可以不转换。
 
