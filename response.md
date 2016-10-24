@@ -1,4 +1,4 @@
-# 统一响应码 
+# 统一响应 
 
 api的请求响应码，和标准的http状态码基本一致，按照[RFC 7231](https://tools.ietf.org/html/rfc7231#page-47)的标准定义。
 
