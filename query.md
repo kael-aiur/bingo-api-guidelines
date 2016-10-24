@@ -119,8 +119,8 @@ orderby表达式主要是用于排序，类似sql的`order by`关键字。
 我们先来看一个例子：
 
 ```
-请求1：GET /student?select=id,name
-请求2: GET /student?orderby=name desc&select=id,name
+GET /student?select=id,name                   :请求1
+GET /student?orderby=name desc&select=id,name :请求2
 ```
 
 请求1的返回结果:
