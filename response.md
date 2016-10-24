@@ -27,8 +27,8 @@ api的请求响应码，和标准的http状态码基本一致，按照[RFC 7231]
 }
 或
 {
-    status:500,
-    error:"请求处理发生未知异常"
+    status:"NOT_FOUND",
+    error:"找不到指定记录"
 }
 ```
 
