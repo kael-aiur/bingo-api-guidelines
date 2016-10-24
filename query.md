@@ -164,8 +164,8 @@ GET /student?orderby=name desc&select=id,name :请求2
 expand表达式也叫展开表达式，主要是用来解决一些需要额外返回的补充信息的需求的。我们先来看一个例子：
 
 ```
-请求1：查询班级信息: GET /classes/7h72GggUMsn
-请求2：查询班级信息: GET /classes/7h72GggUMsn?expand=students
+GET /classes/7h72GggUMsn                 :请求1
+GET /classes/7h72GggUMsn?expand=students :请求2
 ```
 
 请求1的查询结果如下：
