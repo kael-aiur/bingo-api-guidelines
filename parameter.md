@@ -2,9 +2,9 @@
 
 |api作用|参数位置|说明|示例|
 |----|----|----|----|
-|创建数据|body|建议使用json格式的请求体|POST /student `{}`|
-|修改数据|body|建议使用json格式的请求体||
-|查询数据|queryString/path||
+|创建数据|body|建议使用json格式的请求体|POST /student body：`{name:"Tom",sex:'1'}`|
+|修改数据|body|建议使用json格式的请求体|POST /student/{id} body:`{name:Lucy}`|
+|查询数据|queryString/path|||
 |删除数据|path/queryString|单行删除(根据id)建议使用path传递参数，根据指定条件删除多行记录建议使用queryString|
 |需要写数据的业务操作|body|建议使用form-urlencoded的请求体传递参数|
 |文件上传一类的操作|body|建议使用form-data的请求体传递参数和文件流|
