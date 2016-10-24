@@ -53,8 +53,8 @@ DELETE /score/{scoreId}     :删除一个分数的记录
 查询记录使用`GET`请求，查询结果可以是单行或者多行，可以支持id查询和条件查询，id查询的url示例如下：
 
 ```
-GET /student/{studentId}:查询单个学生
-GET /student :查询学生
+GET /student/{studentId}                                   :查询单个学生
+GET /student                                               :查询学生
 GET /statistics/average?classesId={classesId}&subject=math :查询班级数学成绩平均分
 ```
 
