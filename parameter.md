@@ -117,7 +117,3 @@ name=Lucy&classesId=7h72GggUMsn&schoolId=7hUdfgwURaH
 ```
 
 这里的请求体就是`name=Lucy&classesId=7h72GggUMsn&schoolId=7hUdfgwURaH`，一般情况下web容器都能自动解析这个请求体。
-
-## api参数设计规范
-
-一般来说，一组api需要完成的业务功能可能是比较复杂的，因此我们对不同作用的api的参数做不同的规范设计，有助于使用者理解和使用我们的api，品高api网关的参数设计规范如下：
