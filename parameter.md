@@ -1,12 +1,13 @@
 # api参数规范
 
-网关的api参数一般有三种方式传递：
-
-|位置|说明|示例|
+|api作用|参数位置|说明|
 |----|----|----|
-|path|通过url传递|/student/{id}|
-|queryString|通过查询字符串传递|/student?id={id}|
-|body|通过请求体传递||
+|创建数据|body|建议使用json格式的请求体|
+|修改数据|body|建议使用json格式的请求体|
+|查询数据|queryString/path|指定条件查询建议使用queryString的方式传递查询参数，根据指定参数(如id)查询单行记录建议使用path传递参数|
+|删除数据|path/queryString|单行删除(根据id)建议使用path传递参数，根据指定条件删除多行记录建议使用queryString|
+|需要写数据的业务操作|body|建议使用form-urlencoded的请求体传递参数|
+|文件上传一类的操作|body|建议使用form-data的请求体传递参数和文件流|
 
 ## url参数传递
 
@@ -120,12 +121,3 @@ name=Lucy&classesId=7h72GggUMsn&schoolId=7hUdfgwURaH
 ## api参数设计规范
 
 一般来说，一组api需要完成的业务功能可能是比较复杂的，因此我们对不同作用的api的参数做不同的规范设计，有助于使用者理解和使用我们的api，品高api网关的参数设计规范如下：
-
-|api作用|参数位置|说明|
-|----|----|----|
-|创建数据|body|建议使用json格式的请求体|
-|修改数据|body|建议使用json格式的请求体|
-|查询数据|queryString/path|指定条件查询建议使用queryString的方式传递查询参数，根据指定参数(如id)查询单行记录建议使用path传递参数|
-|删除数据|path/queryString|单行删除(根据id)建议使用path传递参数，根据指定条件删除多行记录建议使用queryString|
-|需要写数据的业务操作|body|建议使用form-urlencoded的请求体传递参数|
-|文件上传一类的操作|body|建议使用form-data的请求体传递参数和文件流|
