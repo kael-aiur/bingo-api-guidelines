@@ -33,10 +33,10 @@ GET /classes?filter=schoolId eq {schoolId}   :多个查询
 现在我们以对学生信息的增删改查为例子来说明如何设计url。
 
 ```
-查询学生记录：GET /student
-添加学生记录: POST /student
-修改学生记录: PATCH /student/{id}
-删除学生记录: DELETE /student/{id}
+GET /student         :查询学生记录
+POST /student        :添加学生记录
+PATCH /student/{id}  :修改学生记录
+DELETE /student/{id} :删除学生记录
 ```
 
 我们注意到，对单个学生记录的操作，**url都是在应用的根目录后补充模型名称的小写单词作为url的**，完整的url例子如下:
