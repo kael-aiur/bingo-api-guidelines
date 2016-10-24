@@ -39,7 +39,7 @@ PATCH /student/{id}  :修改学生记录
 DELETE /student/{id} :删除学生记录
 ```
 
-我们注意到，对单个学生记录的操作，**url都是在应用的根目录后补充模型名称的小写单词作为url的**，完整的url例子如下:
+单行记录的操作，**url都是在应用的根目录后补充模型名称的小写单词作为url的**，如:
 
 ```
 http://localhost:8080/api/student
