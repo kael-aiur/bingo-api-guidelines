@@ -4,7 +4,7 @@
 |----|----|----|----|
 |创建数据|body|POST /student body:`{name:"Tom",sex:'1'}`|建议使用json格式的请求体|
 |修改数据|body|POST /student/{id} body:`{name:Lucy}`|建议使用json格式的请求体|
-|查询数据|queryString/path|GET /student/{id}||
+|查询数据|queryString/path|GET /student/{id} 或 GET /student?id={id}||
 |删除数据|path/queryString|DELETE /student/{id} 或 DELETE /student?id={id}|单行删除(根据id)建议使用path传递参数，根据指定条件删除多行记录建议使用queryString|
 |需要写数据的业务操作|body|POST /status/disable body:`studentId={id}`|建议使用form-urlencoded的请求体传递参数|
 |文件上传一类的操作|body||建议使用form-data的请求体传递参数和文件流|
