@@ -10,7 +10,6 @@ GET /student/{studentId}:查询单个学生
 
 ```
 查询学生: GET /student
-
 ```
 
 
