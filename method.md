@@ -2,13 +2,13 @@
 
 在restful的建议标准中，对不同的操作规定了使用不同的请求方法，品高api网关也有类似的规定，但是简化了一些规范，以便更好的理解和使用。
 
-|请求方法|操作|备注|
+|请求方法|操作|示例|
 |----|----|----|
-|POST|创建数据|　|
-|PATCH|修改数据|对模型数据的修改|
-|DELETE|删除数据|对模型数据的删除|
-|GET|查询数据|对所有查询性质的业务|
-|POST|需要写数据的业务操作|多次提交可能会导致不同结果的业务|
+|POST|创建数据|POST /student|
+|PATCH|修改数据|PATCH /student/{id}|
+|DELETE|删除数据|DELETE /student/{id}|
+|GET|查询数据|GET /student?filters=name eq Tom|
+|POST|需要写数据的业务操作|POST /status/student?status=disable&studentId={studentId}|
 
 ---
 
