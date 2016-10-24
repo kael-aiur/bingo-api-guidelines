@@ -28,6 +28,7 @@ GET /classes?filter=schoolId eq {schoolId} :多个查询
 ```
 
 由于`class`是java的关键字，需要考虑如何避开关键字，这里使用了`Classes`这种复数形式来给类命名。
+
 ```
 GET /male_student
 ```
