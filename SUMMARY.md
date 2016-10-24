@@ -5,7 +5,6 @@
 * [api开发规范](specification.md)
     * [用户身份校验](authentication.md)
     * [请求方法规范](method.md)
-        * [创建数据](create_data.md)
         * [update\_data](updatedata.md)
         * [delete\_data](deletedata.md)
         * [get\_data](getdata.md)
