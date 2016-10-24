@@ -20,8 +20,8 @@ api的查询表达式是在查询模型记录的时候使用的表达式，用�
 select表达式的作用是指定查询的属性，类似SQL的`select`关键字，我们先来看一个例子:
 
 ```
-请求1：GET /student/7D82fxxw1jn
-请求2：GET /student/7D82fxxw1jn?select=id,name
+GET /student/7D82fxxw1jn                   :请求1
+GET /student/7D82fxxw1jn?select=id,name    :请求2
 ```
 
 请求1返回的结果如下：
