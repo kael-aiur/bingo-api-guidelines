@@ -11,12 +11,12 @@
 |POST|业务操作|POST /status/student?status=disable&studentId={studentId}|
 
 
+
+
 ## 业务操作
 
-关于对数据的操作，restful的参考规范中基本只定义了对单行记录的操作方法，在实际开发api的过程中，我们经常遇到各种各样需要提交数据的api，并且这类api并不是只针对单个模型的记录的操作，而是一些特定的业务操作，这一类操作，品高api开发规范建议全部使用`POST`方法，比如，某个学生因为生病申请休学一年，这个时候需要我们保存所有学生的学籍信息，并且将这些信息设置为暂不可用的状态：
+对于会改变数据状态的业务操作，使用'POST'方法，比如:
 
 ```
-POST /status/student?status=disable&studentId={studentId}
+POST /status/student?status=disable&studentId={studentId} :设置学生信息失效
 ```
-
-这种业务实际上是要修改学生的状态，但是得一并把学生相关的资料进行处理，并不是单独的记录处理，包含业务操作并且会改变状态的api，都需要使用`POST`请求。
