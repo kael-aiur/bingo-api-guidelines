@@ -25,22 +25,13 @@ POST /score :创建一个分数的记录
 
 ## 修改数据
 
-
-
 修改模型数据，使用`PATCH`请求，如下：
 
-
-
 ```
-
-PATCH /school/{schoolId} :修改一个学校的记录
-
+PATCH /school/{schoolId}   :修改一个学校的记录
 PATCH /classes/{classesId} :修改一个班级的记录
-
 PATCH /student/{studentId} :修改一个学生的记录
-
-PATCH /score/{scoreId} :修改一个分数的记录
-
+PATCH /score/{scoreId}     :修改一个分数的记录
 ```
 
 
