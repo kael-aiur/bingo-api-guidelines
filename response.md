@@ -66,7 +66,5 @@ GET /student -> 404 :没有这个api时
 如：
 
 ```
-GET /student -> 400 :请求不是标准http请求时
-GET /student -> 400 :请求不是标准http请求时
-GET /student -> 400 :请求不是标准http请求时
+GET /student -> 500 :请求处理出现未知异常
 ```
