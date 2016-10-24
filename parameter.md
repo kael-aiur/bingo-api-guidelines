@@ -72,33 +72,23 @@ form-data的请求体，需要添加请求头`Content-Type: multipart/form-data`
 
 ```
 POST /student HTTP/1.1
-
 Host: localhost:8080
-
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
-
 Cache-Control: no-cache
-
 ------WebKitFormBoundary7MA4YWxkTrZu0gW
-
 Content-Disposition: form-data; name="name"
 
 Lucy
-
 ------WebKitFormBoundary7MA4YWxkTrZu0gW
 
 Content-Disposition: form-data; name="classesId"
 
 7h72GggUMsn
-
 ------WebKitFormBoundary7MA4YWxkTrZu0gW
-
 Content-Disposition: form-data; name="schoolId"
 
 7hUdfgwURaH
-
 ------WebKitFormBoundary7MA4YWxkTrZu0gW--
-
 ```
 
 这个请求报文，多数情况下web应用容器都能自动解析出参数，如果我们开发的api不是通过web容器部署的话，可以自行选择http请求解析的工作进行解析。
