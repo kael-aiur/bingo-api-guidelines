@@ -7,7 +7,7 @@ api的url和一般的restful url相似，但是为了更加方便设计和调用
 |url中的模型名称|<ul><li>/student</li><li>/primary_school</li></ul>|全部小写，下划线风格|　|
 |单个模型的增删改查url|<ul><li>/student/abcdefg</li><li>/school/abcdEfG</li></ul>|在path中传id,参数值不做下划线转换|增删改查通过不同的请求方法区分|
 |具有包含关系的模型url|<ul><li>/student?classesId={classesId}</li></ul>|不使用path的方式传递关系对象id，全部采用普通的参数传递|　|
-|与模型无关的业务url|<ul><li>与模型无关或涉及多个模型并且没有主次的业务api，使用业务模块名称(下划线式)作为url的根路径</li><li>具体的业务功能名称作为拼在业务url后边的子路径</li></ul>| |
+|与模型无关的业务url|<ul><li>/statistic/average?classesId={classesId}&subject=math</li></ul>|url根据业务名称定义，使用全小写的下划线风格| |
 
 ---
 
