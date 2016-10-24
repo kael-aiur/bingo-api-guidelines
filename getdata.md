@@ -3,9 +3,7 @@
 查询记录使用`GET`请求，查询结果可以是单行或者多行，可以支持id查询和条件查询，id查询的url示例如下：
 
 ```
-
-查询单个学生：GET /student/{studentId}
-
+GET /student/{studentId}:查询单个学生
 ```
 
 
