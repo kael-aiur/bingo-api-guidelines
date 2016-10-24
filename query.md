@@ -10,7 +10,7 @@ api的查询表达式是在查询模型记录的时候使用的表达式，用�
 |----|----||
 |select表达式|指定查询属性|select=name,age|
 |filters表达式|指定查询过滤条件|filters=name eq Tom and age lt 20|
-|orderby表达式|指定查询排序方式||
+|orderby表达式|指定查询排序方式|orderby=age asc|
 |expand表达式|指定关系属性展开方式||
 
 ------
