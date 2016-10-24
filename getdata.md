@@ -8,8 +8,6 @@ GET /student/{studentId}:查询单个学生
 
 如果不使用id查询，示例如下：
 
-
-
 ```
 
 查询学生: GET /student
