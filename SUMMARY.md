@@ -6,6 +6,7 @@
     * [用户身份校验](authentication.md)
     * [请求方法规范](method.md)
         * [创建数据](create_data.md)
+        * [update\_data](updatedata.md)
     * [统一响应码](response.md)
     * [api查询表达式](query.md)
     * [api参数规范](parameter.md)
