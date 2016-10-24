@@ -57,8 +57,8 @@ GET /student/7D82fxxw1jn?select=id,name    :请求2
 filter表达式的作用是对查询结果进行过滤，类似SQL中的where关键字，我们先来看一个例子：
 
 ```
-请求1：GET /student?select=id,name
-请求2: GET /student?filters=name eq Tom&select=id,name
+GET /student?select=id,name                     :请求1
+GET /student?filters=name eq Tom&select=id,name :请求2
 ```
 
 请求1的返回结果如下：
