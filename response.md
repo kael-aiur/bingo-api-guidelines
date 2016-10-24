@@ -22,8 +22,8 @@ api的请求响应码，和标准的http状态码基本一致，按照[RFC 7231]
 
 ```javascript
 {
-    status:401,
-    error:"用户未登录"
+    code:"BAD_REQUEST",
+    message:"用户未登录"
 }
 或
 {
