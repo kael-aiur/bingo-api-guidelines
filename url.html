@@ -1,0 +1,428 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>url设计规范 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="authentication.html" />
+    
+    
+    <link rel="prev" href="parameter.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    品高api网关服务开发指引
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="introdion.html">
+            
+                <a href="introdion.html">
+            
+                    
+                    api网关总体介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="specification.html">
+            
+                <a href="specification.html">
+            
+                    
+                    api开发规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="method.html">
+            
+                <a href="method.html">
+            
+                    
+                    请求方法规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="response.html">
+            
+                <a href="response.html">
+            
+                    
+                    统一响应
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="query.html">
+            
+                <a href="query.html">
+            
+                    
+                    api查询表达式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="parameter.html">
+            
+                <a href="parameter.html">
+            
+                    
+                    api参数规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.5" data-path="url.html">
+            
+                <a href="url.html">
+            
+                    
+                    url设计规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="authentication.html">
+            
+                <a href="authentication.html">
+            
+                    
+                    用户身份校验
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >url设计规范</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="url&#x8BBE;&#x8BA1;&#x89C4;&#x8303;">url&#x8BBE;&#x8BA1;&#x89C4;&#x8303;</h1>
+<p>api&#x7684;url&#x548C;&#x4E00;&#x822C;&#x7684;restful url&#x76F8;&#x4F3C;&#xFF0C;&#x4F46;&#x662F;&#x4E3A;&#x4E86;&#x66F4;&#x52A0;&#x65B9;&#x4FBF;&#x8BBE;&#x8BA1;&#x548C;&#x8C03;&#x7528;&#xFF0C;&#x5BF9;url&#x505A;&#x4E86;&#x4E00;&#x4E9B;&#x7B80;&#x5316;&#xFF0C;&#x4E0B;&#x9762;&#x662F;url&#x7684;&#x8BBE;&#x8BA1;&#x89C4;&#x8303;&#x8868;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x573A;&#x666F;</th>
+<th>&#x793A;&#x4F8B;</th>
+<th>&#x89C4;&#x8303;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>url&#x4E2D;&#x7684;&#x6A21;&#x578B;&#x540D;&#x79F0;</td>
+<td><ul><li>/student</li><li>/primary_school</li></ul></td>
+<td>&#x5168;&#x90E8;&#x5355;&#x6570;&#x5F62;&#x5F0F;&#x5C0F;&#x5199;&#xFF0C;&#x4E0B;&#x5212;&#x7EBF;&#x98CE;&#x683C;</td>
+</tr>
+<tr>
+<td>&#x5355;&#x4E2A;&#x6A21;&#x578B;&#x7684;&#x589E;&#x5220;&#x6539;&#x67E5;url</td>
+<td><ul><li>/student/abcdefg</li><li>/school/abcdEfG</li></ul></td>
+<td>&#x5728;path&#x4E2D;&#x4F20;id,&#x53C2;&#x6570;&#x503C;&#x4E0D;&#x505A;&#x4E0B;&#x5212;&#x7EBF;&#x8F6C;&#x6362;</td>
+</tr>
+<tr>
+<td>&#x5177;&#x6709;&#x5305;&#x542B;&#x5173;&#x7CFB;&#x7684;&#x6A21;&#x578B;url</td>
+<td><ul><li>/student?classesId={classesId}</li></ul></td>
+<td>&#x4E0D;&#x4F7F;&#x7528;path&#x7684;&#x65B9;&#x5F0F;&#x4F20;&#x9012;&#x5173;&#x7CFB;&#x5BF9;&#x8C61;id&#xFF0C;&#x5168;&#x90E8;&#x91C7;&#x7528;&#x666E;&#x901A;&#x7684;&#x53C2;&#x6570;&#x4F20;&#x9012;</td>
+</tr>
+<tr>
+<td>&#x4E0E;&#x6A21;&#x578B;&#x65E0;&#x5173;&#x7684;&#x4E1A;&#x52A1;url</td>
+<td><ul><li>/statistic/average?classesId={classesId}&amp;subject=math</li></ul></td>
+<td>url&#x6839;&#x636E;&#x4E1A;&#x52A1;&#x540D;&#x79F0;&#x5B9A;&#x4E49;&#xFF0C;&#x4F7F;&#x7528;&#x5168;&#x5C0F;&#x5199;&#x7684;&#x4E0B;&#x5212;&#x7EBF;&#x98CE;&#x683C;</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="url&#x4E2D;&#x7684;&#x6A21;&#x578B;&#x540D;&#x79F0;">url&#x4E2D;&#x7684;&#x6A21;&#x578B;&#x540D;&#x79F0;</h2>
+<p>&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;api&#x7684;&#x4E1A;&#x52A1;&#x529F;&#x80FD;&#x90FD;&#x662F;&#x5BF9;&#x6A21;&#x578B;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x548C;&#x5904;&#x7406;&#xFF0C;&#x5982;&#xFF1A;</p>
+<pre><code>GET /student/{id}                            :&#x5355;&#x4E2A;&#x67E5;&#x8BE2;
+GET /student?filter=classesId eq {classesId} :&#x591A;&#x4E2A;&#x67E5;&#x8BE2;
+GET /classes/{id}                            :&#x5355;&#x4E2A;&#x67E5;&#x8BE2;
+GET /classes?filter=schoolId eq {schoolId}   :&#x591A;&#x4E2A;&#x67E5;&#x8BE2;
+</code></pre><p>&#x65E0;&#x8BBA;&#x662F;&#x67E5;&#x8BE2;&#x5355;&#x4E2A;&#x5B66;&#x751F;&#x7684;url&#x8FD8;&#x662F;&#x67E5;&#x8BE2;&#x591A;&#x4E2A;&#x5B66;&#x751F;&#x7684;url&#xFF0C;&#x4F7F;&#x7528;&#x7684;&#x90FD;&#x662F;&#x5355;&#x6570;&#x7684;&#x5F62;&#x5F0F;&#xFF0C;&#x4E0D;&#x4F1A;&#x4F7F;&#x7528;&#x590D;&#x6570;&#x5F62;&#x5F0F;&#xFF0C;&#x7531;&#x4E8E;<code>class</code>&#x662F;java&#x7684;&#x5173;&#x952E;&#x5B57;&#xFF0C;&#x9700;&#x8981;&#x8003;&#x8651;&#x5982;&#x4F55;&#x907F;&#x5F00;&#x5173;&#x952E;&#x5B57;&#xFF0C;&#x8FD9;&#x91CC;&#x4F7F;&#x7528;&#x4E86;<code>Classes</code>&#x8FD9;&#x79CD;&#x590D;&#x6570;&#x5F62;&#x5F0F;&#x6765;&#x7ED9;&#x7C7B;&#x547D;&#x540D;&#x3002;</p>
+<blockquote>
+<p>url&#x7684;&#x8BBE;&#x8BA1;&#xFF0C;&#x4E00;&#x822C;&#x6D89;&#x53CA;&#x6A21;&#x578B;&#x7684;&#x4F1A;&#x5C06;&#x6A21;&#x578B;&#x7684;&#x540D;&#x79F0;&#x4ECE;&#x9A7C;&#x5CF0;&#x5F0F;&#x8F6C;&#x6362;&#x4E3A;&#x4E0B;&#x5212;&#x7EBF;&#x5F0F;&#xFF0C;&#x5982;&#x679C;&#x67D0;&#x4E9B;&#x6A21;&#x578B;&#x7684;&#x540D;&#x79F0;&#x672C;&#x8EAB;&#x5C31;&#x662F;&#x4E0B;&#x5212;&#x7EBF;&#x5F0F;&#xFF0C;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x4E0D;&#x8F6C;&#x6362;&#x3002;</p>
+</blockquote>
+<hr>
+<h2 id="&#x5355;&#x4E2A;&#x6A21;&#x578B;&#x589E;&#x5220;&#x6539;&#x67E5;">&#x5355;&#x4E2A;&#x6A21;&#x578B;&#x589E;&#x5220;&#x6539;&#x67E5;</h2>
+<p>&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x4EE5;&#x5BF9;&#x5B66;&#x751F;&#x4FE1;&#x606F;&#x7684;&#x589E;&#x5220;&#x6539;&#x67E5;&#x4E3A;&#x4F8B;&#x5B50;&#x6765;&#x8BF4;&#x660E;&#x5982;&#x4F55;&#x8BBE;&#x8BA1;url&#x3002;</p>
+<pre><code>GET /student         :&#x67E5;&#x8BE2;&#x5B66;&#x751F;&#x8BB0;&#x5F55;
+POST /student        :&#x6DFB;&#x52A0;&#x5B66;&#x751F;&#x8BB0;&#x5F55;
+PATCH /student/{id}  :&#x4FEE;&#x6539;&#x5B66;&#x751F;&#x8BB0;&#x5F55;
+DELETE /student/{id} :&#x5220;&#x9664;&#x5B66;&#x751F;&#x8BB0;&#x5F55;
+</code></pre><p>&#x5355;&#x884C;&#x8BB0;&#x5F55;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;<strong>url&#x90FD;&#x662F;&#x5728;&#x5E94;&#x7528;&#x7684;&#x6839;&#x76EE;&#x5F55;&#x540E;&#x8865;&#x5145;&#x6A21;&#x578B;&#x540D;&#x79F0;&#x7684;&#x5C0F;&#x5199;&#x5355;&#x8BCD;&#x4F5C;&#x4E3A;url&#x7684;</strong>&#xFF0C;&#x5982;:</p>
+<pre><code>http://localhost:8080/api/student
+http://localhost:8080/api/classes
+http://localhost:8080/api/school
+http://localhost:8080/api/score
+</code></pre><p>&#x4ECE;&#x4E0A;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#x6765;&#xFF1A;</p>
+<blockquote>
+<ul>
+<li>&#x5BF9;&#x4E8E;&#x5355;&#x4E2A;&#x6A21;&#x578B;&#x7684;&#x589E;&#x52A0;&#x548C;&#x67E5;&#x8BE2;&#xFF0C;url&#x662F;&#x6A21;&#x578B;&#x7684;url&#x6839;&#x8DEF;&#x5F84;&#xFF0C;&#x901A;&#x8FC7;<code>GET</code>&#x548C;<code>POST</code>&#x6765;&#x786E;&#x5B9A;&#x662F;&#x65B0;&#x589E;&#x8FD8;&#x662F;&#x67E5;&#x8BE2;</li>
+<li>&#x5BF9;&#x4E8E;&#x5355;&#x4E2A;&#x6A21;&#x578B;&#x7684;&#x4FEE;&#x6539;&#x548C;&#x5220;&#x9664;&#xFF0C;url&#x662F;&#x6A21;&#x578B;&#x7684;url&#x52A0;&#x4E0A;&#x8BB0;&#x5F55;&#x7684;id&#xFF0C;&#x901A;&#x8FC7;<code>PATCH</code>&#x548C;<code>DELETE</code>&#x786E;&#x5B9A;&#x662F;&#x4FEE;&#x6539;&#x8FD8;&#x662F;&#x5220;&#x9664;</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="&#x5177;&#x6709;&#x5305;&#x542B;&#x5173;&#x7CFB;&#x7684;&#x6A21;&#x578B;url">&#x5177;&#x6709;&#x5305;&#x542B;&#x5173;&#x7CFB;&#x7684;&#x6A21;&#x578B;url</h2>
+<p><strong>&#x89C4;&#x8303;&#x5EFA;&#x8BAE;&#x4E0D;&#x4F7F;&#x7528;&#x8FD9;&#x5F3A;&#x5173;&#x7CFB;&#x7684;url&#xFF0C;&#x5BF9;&#x4E8E;&#x6A21;&#x578B;&#x7684;&#x64CD;&#x4F5C;&#x5C31;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x6A21;&#x578B;&#x7684;&#x6839;url&#xFF0C;&#x800C;&#x76F8;&#x5E94;&#x7684;&#x5173;&#x7CFB;&#x6A21;&#x578B;&#x91C7;&#x7528;&#x53C2;&#x6570;&#x7684;&#x65B9;&#x5F0F;&#x4F20;&#x9012;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x5F3A;&#x5173;&#x7CFB;&#x7684;&#x8BDD;&#xFF0C;&#x4F7F;&#x7528;&#x5FC5;&#x987B;&#x53C2;&#x6570;&#xFF0C;&#x975E;&#x5F3A;&#x5173;&#x7CFB;&#x7684;&#x8BDD;&#x4F7F;&#x7528;&#x975E;&#x5FC5;&#x987B;&#x53C2;&#x6570;</strong>&#xFF0C;&#x5982;&#xFF1A;</p>
+<pre><code>GET /student?schoolId={schoolId}&amp;classesId={classesId}&amp;id={studentId}
+GET /classes?schoolId={schoolId}
+</code></pre><p>&#x5177;&#x6709;&#x5305;&#x542B;&#x5173;&#x7CFB;&#x7684;url&#x8BBE;&#x8BA1;&#x89C4;&#x8303;&#xFF1A;</p>
+<blockquote>
+<ul>
+<li>&#x5177;&#x6709;&#x5305;&#x542B;&#x5173;&#x7CFB;&#x7684;&#x6A21;&#x578B;&#x7684;url&#x4E5F;&#x662F;&#x5E94;&#x7528;&#x4E0A;&#x4E0B;&#x6587;&#x7684;url&#x52A0;&#x4E0A;&#x6A21;&#x578B;&#x7684;&#x6839;url</li>
+<li>&#x4E0E;&#x8FD9;&#x4E2A;&#x6A21;&#x578B;&#x6709;&#x5173;&#x7684;&#x6A21;&#x578B;&#x53C2;&#x6570;&#x91C7;&#x7528;&#x53C2;&#x6570;&#x7684;&#x65B9;&#x5F0F;&#x4F20;&#x9012;&#xFF0C;&#x4E0D;&#x4F7F;&#x7528;url&#x7684;&#x65B9;&#x5F0F;&#x4F20;&#x9012;</li>
+</ul>
+</blockquote>
+<hr>
+<h2 id="&#x4E0E;&#x6A21;&#x578B;&#x65E0;&#x5173;&#x7684;&#x4E1A;&#x52A1;url">&#x4E0E;&#x6A21;&#x578B;&#x65E0;&#x5173;&#x7684;&#x4E1A;&#x52A1;url</h2>
+<p><strong>&#x5BF9;&#x591A;&#x4E2A;&#x6A21;&#x578B;&#x7684;&#x7EFC;&#x5408;&#x4E1A;&#x52A1;&#xFF0C;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x7684;url&#x4E00;&#x822C;&#x4EE5;&#x6539;&#x4E1A;&#x52A1;&#x6A21;&#x5757;&#x4F5C;&#x4E3A;api&#x7684;&#x6839;&#x8DEF;&#x5F84;&#xFF0C;&#x540E;&#x9762;&#x52A0;&#x4E0A;&#x5177;&#x4F53;&#x7684;&#x4E1A;&#x52A1;&#x529F;&#x80FD;</strong>&#xFF0C;&#x5982;&#xFF1A;</p>
+<pre><code>GET /statistics/average?classesId={classesId}&amp;subject={math}
+</code></pre><p>&#x8FD9;&#x91CC;&#x4F20;&#x9012;&#x4E86;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x4E00;&#x4E2A;&#x662F;&#x73ED;&#x7EA7;id,&#x4E00;&#x4E2A;&#x662F;&#x79D1;&#x76EE;&#xFF0C;&#x76EE;&#x7684;&#x662F;&#x6C42;&#x6307;&#x5B9A;&#x73ED;&#x7EA7;&#x67D0;&#x4E2A;&#x79D1;&#x76EE;&#x7684;&#x5E73;&#x5747;&#x5206;&#x3002;</p>
+<p>&#x89C4;&#x8303;&#x5982;&#x4E0B;&#xFF1A;</p>
+<blockquote>
+<ul>
+<li>&#x4E0E;&#x6A21;&#x578B;&#x65E0;&#x5173;&#x6216;&#x6D89;&#x53CA;&#x591A;&#x4E2A;&#x6A21;&#x578B;&#x5E76;&#x4E14;&#x6CA1;&#x6709;&#x4E3B;&#x6B21;&#x7684;&#x4E1A;&#x52A1;api&#xFF0C;&#x4F7F;&#x7528;&#x4E1A;&#x52A1;&#x6A21;&#x5757;&#x540D;&#x79F0;(&#x4E0B;&#x5212;&#x7EBF;&#x5F0F;)&#x4F5C;&#x4E3A;url&#x7684;&#x6839;&#x8DEF;&#x5F84;</li>
+<li>&#x5177;&#x4F53;&#x7684;&#x4E1A;&#x52A1;&#x529F;&#x80FD;&#x540D;&#x79F0;&#x4F5C;&#x4E3A;&#x62FC;&#x5728;&#x4E1A;&#x52A1;url&#x540E;&#x8FB9;&#x7684;&#x5B50;&#x8DEF;&#x5F84;</li>
+</ul>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="parameter.html" class="navigation navigation-prev " aria-label="Previous page: api参数规范">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="authentication.html" class="navigation navigation-next " aria-label="Next page: 用户身份校验">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"url设计规范","level":"1.3.5","depth":2,"next":{"title":"用户身份校验","level":"1.3.6","depth":2,"path":"authentication.md","ref":"authentication.md","articles":[]},"previous":{"title":"api参数规范","level":"1.3.4","depth":2,"path":"parameter.md","ref":"parameter.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"url.md","mtime":"2016-10-25T01:59:36.117Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2016-10-25T02:01:32.345Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
