@@ -100,7 +100,9 @@ filters表达式中规定的操作符和作用如下：
 |ge|>=|大于或等于|filters=age **ge** 20|
 |ne|!=|不等于|filters=age **ne** 20|
 |like|like|模糊查询|filters=name **like** T%|
-|in|in|在指定的值内查询|filters=name **in** **(**Tom,Jerry**)**|
+|in|in|在指定的值内查询|filters=name |
+|is|is|相当于sql关键字is|filters=name is null|
+|not|is not|相当于sql关键字is not|filters=name is not null|
 |and|and|表示多条件间的且关系|filters=name **like** T% **and** age **lt** 20|
 |or|or|表示多条件间的或关系|filters=name **like** T% **or** age **lt** 20|
 |()|()|表达式组，可以用来改变表达式的优先级关系|filters=name **like** T% **and** **((**age **lt** 20**)** **or** **(**name **like** %y**))**|
